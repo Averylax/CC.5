@@ -24,3 +24,43 @@ const order = { // Creates an object called order
 order.displayOrder(); // calls the display order of the order
 // Task 2 - End
 
+// Task 3 - Array Manipulations
+let cartItems = [`Ball`, `Football`, `Basketball`];
+console.log(`Items in your cart:
+    ${cartItems[0]},
+    ${cartItems[1]},
+    ${cartItems[2]},
+`); // Displays the items in the cart
+
+cartItems.push(`Baseball`); // Adds Baseball to the end of the array
+console.log(`Added new Item to cart:
+    ${cartItems[0]},
+    ${cartItems[1]},
+    ${cartItems[2]},
+    ${cartItems[3]}
+`) // Displays the new list of Items in the cart
+
+cartItems.pop(); // Removes the last item in the array
+console.log(`Removed last Item from cart:
+    ${cartItems[0]},
+    ${cartItems[1]},
+    ${cartItems[2]}
+`) // Displays the new list of Items in the cart
+
+cartItems.unshift(`Baseball`); // Adds Baseball to the beginning of the array
+console.log(`Added new Item to cart:
+    ${cartItems[0]},
+    ${cartItems[1]},
+    ${cartItems[2]},
+    ${cartItems[3]}
+`) // Displays the new list of Items in the cart
+
+cartItems.shift(); // Removes the first item in the array
+console.log(`Removed first Item from cart:
+    ${cartItems[0]},
+    ${cartItems[1]},
+    ${cartItems[2]}
+`) // Displays the new list of Items in the cart
+// Task 3 - End
+
+
