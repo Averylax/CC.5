@@ -85,6 +85,15 @@ console.log(`Total Invoice is ${totalInvoice}`); // Logs the total invoice
 
 // Task 7 - find() Method
 const customers = [`Alice`, `Bob`, `Charlie`, `David`];
-const foundCustomer = customers.find(customer => customer ===`Charilie`);
+const foundCustomer = customers.find(customer => customer ===`Charlie`);
 console.log(foundCustomer);
 // Task 7 - End
+
+// Task 8 - Tax Calculation
+function calculateTax(amount, taxRate) {
+    const tax = amount * taxRate;
+    console.log(`The product amount is: $${amount} with a taxe rate of ${taxRate * 100}%, making the tax ${tax}`)
+    return tax;
+}
+calculateTax(15000, 0.1)
+// Task 8 - End
