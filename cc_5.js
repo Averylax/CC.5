@@ -82,3 +82,9 @@ const totalInvoice = sales.reduce((total, x) => total + x, 0); // Math to add up
 console.log(`List of invoices: ${sales}`); // List of invoices
 console.log(`Total Invoice is ${totalInvoice}`); // Logs the total invoice
 // Task 6 - End
+
+// Task 7 - find() Method
+const customers = [`Alice`, `Bob`, `Charlie`, `David`];
+const foundCustomer = customers.find(customer => customer ===`Charilie`);
+console.log(foundCustomer);
+// Task 7 - End
