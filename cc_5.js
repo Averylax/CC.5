@@ -64,8 +64,14 @@ console.log(`Removed first Item from cart:
 // Task 3 - End
 
 // Task 4 - Map Method
-const prices = [200, 400, 600];
-const discountedPrices = prices.map(x => x * (1 - .1));
-console.log(prices);
-console.log(discountedPrices);
+const prices = [200, 400, 600]; // List of Prices
+const discountedPrices = prices.map(x => x * (1 - .1)); // Math to discount the prices by 10%
+console.log(prices); // Logs Prices
+console.log(discountedPrices); // Logs Discounted Prices
 // Task 4 - End
+
+// Task 5 - Filter Method
+const inventory = [5, 0, 12, 8, 0]; // List of inventory stock
+const availableStock = inventory.filter(x => x > 0); // Math to filter out items with no stock
+console.log(availableStock); // List available stocks
+// Task 5 - End
