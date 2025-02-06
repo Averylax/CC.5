@@ -63,4 +63,9 @@ console.log(`Removed first Item from cart:
 `) // Displays the new list of Items in the cart
 // Task 3 - End
 
-
+// Task 4 - Map Method
+const prices = [200, 400, 600];
+const discountedPrices = prices.map(x => x * (1 - .1));
+console.log(prices);
+console.log(discountedPrices);
+// Task 4 - End
