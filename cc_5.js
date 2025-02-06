@@ -84,16 +84,25 @@ console.log(`Total Invoice is ${totalInvoice}`); // Logs the total invoice
 // Task 6 - End
 
 // Task 7 - find() Method
-const customers = [`Alice`, `Bob`, `Charlie`, `David`];
-const foundCustomer = customers.find(customer => customer ===`Charlie`);
-console.log(foundCustomer);
+const customers = [`Alice`, `Bob`, `Charlie`, `David`]; // List of customer names
+const foundCustomer = customers.find(customer => customer ===`Charlie`); // Finds customer 'Charlie' in the list of customers
+console.log(foundCustomer); // Displays the found customer
 // Task 7 - End
 
 // Task 8 - Tax Calculation
-function calculateTax(amount, taxRate) {
-    const tax = amount * taxRate;
-    console.log(`The product amount is: $${amount} with a taxe rate of ${taxRate * 100}%, making the tax ${tax}`)
+function calculateTax(amount, taxRate) { // function to calculate the tax
+    const tax = amount * taxRate; // math to calcuate tax amoumt
+    console.log(`The product amount is: $${amount} with a taxe rate of ${taxRate * 100}%, making the tax ${tax}`) // Displays amount, tax rate, and tax amount
     return tax;
 }
-calculateTax(15000, 0.1)
+calculateTax(15000, 0.1) // Amount to calculate
 // Task 8 - End
+
+// Task 9 - Function Expression
+const applyDiscount = function(price, discount) { // Function to calculate discount amount
+    const discountedPrice = price - (price * discount); // math for discount
+    console.log(`Original Price: $${price}, Discount: ${discount * 100}%, discounted Price: $${discountedPrice}`);
+    return discountedPrice; // Displays discounted price
+};
+applyDiscount(600, 0.15); // Adds 15% discount to total amount
+// Task 9 - End
