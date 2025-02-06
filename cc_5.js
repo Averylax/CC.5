@@ -75,3 +75,10 @@ const inventory = [5, 0, 12, 8, 0]; // List of inventory stock
 const availableStock = inventory.filter(x => x > 0); // Math to filter out items with no stock
 console.log(availableStock); // List available stocks
 // Task 5 - End
+
+// Task 6 - Reduce Method
+const sales = [200, 250, 500, 750];
+const totalInvoice = sales.reduce((total, x) => total + x, 0); // Math to add up the total of the sales
+console.log(`List of invoices: ${sales}`); // List of invoices
+console.log(`Total Invoice is ${totalInvoice}`); // Logs the total invoice
+// Task 6 - End
