@@ -106,3 +106,12 @@ const applyDiscount = function(price, discount) { // Function to calculate disco
 };
 applyDiscount(600, 0.15); // Adds 15% discount to total amount
 // Task 9 - End
+
+// Task 10 - Arrow Function
+const calculatePoints = (purchaseAmount) => {
+    const points = Math.floor(purchaseAmount / 10);
+    console.log(`Purchase Amount: $${purchaseAmount}, Earned Points: ${points}`)
+    return points;
+};
+calculatePoints(632);
+// Task 10 - End
